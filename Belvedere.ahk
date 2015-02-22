@@ -511,6 +511,8 @@ Loop
 	else
 		SleepPeriod := Sleeptime * 1000
 	
+	;To check if sleep works with float number. For instance: 0.5
+	;Log("Sleeping...", "System")
 	Sleep, %SleepPeriod%
 }
 

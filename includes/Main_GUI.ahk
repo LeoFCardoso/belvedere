@@ -92,9 +92,10 @@ MANAGE:
 	
 	Gui, 1: Tab, 3
 	Gui, 1: Add, Groupbox, x63 y40 w620 h70, System Options
-	Gui, 1: Add, Text, x70 y60 w60 h20 , Sleeptime:
-	Gui, 1: Add, Edit, x130 y58 w70 h20 Number vSleep, %Sleep%
-	Gui, 1: Add, DropDownList, x200 y58 w65 vSleeptimeLength, %thisSleeptimeLength%
+	Gui, 1: Add, Text, x70 y60 w200 h20 , Sleeptime (use . as decimal separator):
+	; Suppress "Number" to allow float values.
+	Gui, 1: Add, Edit, x270 y58 w70 h20 vSleep, %Sleep%
+	Gui, 1: Add, DropDownList, x340 y58 w65 vSleeptimeLength, %thisSleeptimeLength%
 	Gui, 1: Add, Checkbox, x70 y90 vConfirmExit Checked%ConfirmExit%, Show confirmation dialog on exit
 	Gui, 1: Add, Groupbox, x63 y120 w620 h95, Logging/Alert Options
 	Gui, 1: Add, Checkbox, x70 y140 vEnableLogging Checked%EnableLogging%, Enable logging for this log type:
